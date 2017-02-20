@@ -1,17 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link href="favstyles.css" rel="stylesheet" type="text/css">
-  <title>Brant and Tom's Favorite Things</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="css/favstyles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.1.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>avorite Things</title>
 </head>
 <body>
-  <h1>Brant and Tom's Favorite Things</h1>
-  <h2>Whales</h2>
-  <p>Whales are majestic creatures that live in the ocean. They are Tom and Brant's favorite animal. This is a list of our favorite animal.</p>
-  <ul>
-    <li>Sperm Whales</li>
-    <li>Blue Whale</li>
-    <li>Gray Whale</li>
-    <li>Baleen Whale</li>
+  <div class="container">
+    <h1>Favorite Things</h1>
+    <h2>Whales</h2>
+    <p>Whales are majestic creatures that live in the ocean. They are Tom and Brant's favorite animal. This is a list of our favorite animal.</p>
+    <form id="whales">
+      <div class="form-group">
+        <label for="1st">First favorite whale</label>
+        <input id="st" class="form-control" type="text">
+      </div>
+      <div class="form-group">
+        <label for="2nd">Second favorite whale</label>
+        <input id="nd" class="form-control" type="text">
+      </div>
+      <div class="form-group">
+        <label for="3rd">Third favorite whale</label>
+        <input id="rd" class="form-control" type="text">
+      </div>
+      <div class="form-group">
+        <label for="4th">Fourth favorite whale</label>
+        <input id="th" class="form-control" type="text">
+      </div>
+      <button type="submit" class="btn">Submit</button>
+    </form>
+    <div>
+      <ul>
+        <li class="st"></li>
+        <li class="nd"></li>
+        <li class="rd"></li>
+        <li class="th"></li>
+      </ul>
+    </div>
+
+    <div>
+      <ol id = "iceCream">
+      </ol>
+    </div>
+
+  </div>
 </body>
 </html>
